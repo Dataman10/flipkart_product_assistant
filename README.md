@@ -44,7 +44,7 @@ Demo :
 - **Clone your GitHub repo**
 
   ```bash
-  git clone https://github.com/Dataman10/flipkart-product-chatbot.git
+  git clone https://github.com/Dataman10/flipkart_product_assistant.git
   ls
   cd TESTING-9
   ls  # You should see the contents of your project
@@ -133,8 +133,8 @@ Demo :
 ### 4. Interlink your Github on VSCode and on VM
 
 ```bash
-git config --global user.email "gyrogodnon@gmail.com"
-git config --global user.name "data-guru0"
+git config --global user.email "hiteshdataman@gmail.com"
+git config --global user.name "Dataman10"
 
 git add .
 git commit -m "commit"
