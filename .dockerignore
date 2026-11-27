@@ -1,0 +1,10 @@
+.venv
+.git
+__pycache__
+*.pyc
+*.egg-info
+.env
+.env.*
+grafana
+prometheus
+uv.lock

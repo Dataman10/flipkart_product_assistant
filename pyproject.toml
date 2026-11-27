@@ -10,19 +10,25 @@ requires-python = ">=3.12"
 dependencies = [
     "datasets==2.20.0",
     "flask==3.0.3",
-    "langchain==0.2.16",
-    "langchain-astradb==0.3.3",
-    "langchain-community==0.2.16",
-    "langchain-groq==0.1.9",
-    "langchain-huggingface==0.0.3",
+    "langchain>=1.0.0,<2.0.0",
+    "langchain-astradb>=1.0.0,<2.0.0",
+    "langchain-groq>=1.0.0",
+    "langgraph>=0.4.5",
+    "langchain-huggingface",
     "pandas==2.2.2",
     "prometheus-client==0.20.0",
     "pypdf==4.3.1",
     "python-dotenv==1.0.1",
+    "sentence-transformers>=6.3.0",
+    "pyarrow==17.0.0",
 ]
 
 [project.scripts]
-fprs = "fprs:main"
+fprs = "flipkart.data_ingestion:main"
+
+[tool.uv.build-backend]
+module-name = "flipkart"
+module-root = "."
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
